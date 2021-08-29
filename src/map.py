@@ -1,12 +1,15 @@
-def increment(x):
+from typing import Callable
+
+
+def increment(x: int) -> int:
     return x + 1
 
 
-def pow2(x):
+def pow2(x: int) -> int:
     return x ** 2
 
 
-def handler(func, sequence):
+def handler(func: Callable, sequence: list) -> list:
     result = []
 
     for elem in sequence:
